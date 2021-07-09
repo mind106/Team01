@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+
+<div class="container my-4">
+    <h1 class="text-center">GIỎ HÀNG</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th style="width:100px;">Hình</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <tr>
+                            <td class="text-danger">1</td>
+                            <td>
+                                <img src="~/Public/Img/AGT0017_3.jpg" class="img-thumbnail" alt="Alternate Text" />
+                            </td>
+                            <td>Áo Thun 2020</td>
+                            <td>
+                                <input name="sl" value="0" style="width:70px;" type="number" class="form-control" />
+                            </td>
+                            <td class="text-right">200000</td>
+                            <td class="text-right">600000</td>
+                            <td><span class="text-danger" style="font-size:20px;"><i class="fas fa-window-close"></i></span></td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <a href="#" class="btn-success btn" >Mua thêm</a>
+                        </td>
+                        <td colspan="4" class="text-right">
+                            <button class="btn btn-info">Cập Nhật</button>
+                            <button class="btn btn-danger">Xóa Đơn Hàng</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="col-md-3">
+            <h3 class="text-center">THÔNG TIN ĐƠN HÀNG</h3>
+            <p>Số sản phẩm: 10sp</p>
+            <p>Tổnng tiền: 1000000 VND</p>
+            <p>Phí vậnn chuyển 30k (Ngoại Tp.HCM)</p>
+            <p>Số tiền thanh toán: 55353123 VDN</p>
+            <button class="btn btn-info">THANH TOÁN</button>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Dang Nhap";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+<div class="container my-4">
+    <h1 class="text-center">ĐĂNG NHẬP</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label><strong>Tên đăng nhập (<span class="text-danger">*</span>)</strong></label>
+                <input name="fullname" placeholder="Tên đăng nhập hoặc Email" text="text" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label><strong>Mật khẩu (<span class="text-danger">*</span>)</strong></label>
+                <input name="fullname" placeholder="Mật khẩu" type="password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" type="submit">Đăng Nhập</button>
+                <a href="@Url.Action("Register","KhachHang")">
+                    <button class="btn btn-success" type="submit">Đăng Ki' Tai' Khoan?</button>
+                </a>
+</div>
+            <div class="form-group">
+                (<span class="text-danger">*</span>)Bắt buộc phải nhập!
+            </div>
+        </div>
+    </div>
+
+</div>

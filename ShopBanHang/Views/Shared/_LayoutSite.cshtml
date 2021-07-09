@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Public/Css/all.min.css" rel="stylesheet" />
+    <link href="~/Public/Css/LayoutSite.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+       
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <section class="header bg-white">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-md-3">
+                    <a href="@Url.Action("Home","Site")">
+                        <img src="~/Public/Img/logo.png" class="img-fluid" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-5 mt-md-4 text-right">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" style="width:10px" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-right mt-md-4">
+                    <div class="khoi"><a href="@Url.Action("Index","LienHe")"><i class="fas fa-phone-alt"></i></a></div>
+                    <div class="khoi"><a href="@Url.Action("Index","Giohang")"><i class="fas fa-cart-plus"></i></a></div>
+                    <div class="khoi"><a href="@Url.Action("Login","KhachHang")"><i class="fas fa-user"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mainmenu bg-danger">
+        <div class="container">
+            @Html.Action("MainMenu", "Module");
+        </div>
+    </section>
+    <section class="maincontent">
+        @RenderBody();
+    </section>
+    <section class="Service bg-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/Public/Img/free-delivery.png" class="img-fluid" />
+                        </div>
+                        <div class="col-8 pl-0">
+                            <h6>Miễn phí vận chuyển</h6>
+                            <p>Miễn phí vận chuyển nội thành</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/Public/Img/21284346.jpg" class="img-fluid" />
+                        </div>
+                        <div class="col-8 pl-0">
+                            <h6>Đổi trả hàng</h6>
+                            <p>Đổi trả lên tới 30 ngày</p>
+                        </div>
+                    </div>
+                </div><div class="col-md-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/Public/Img/share.png" class="img-fluid" />
+                        </div>
+                        <div class="col-8 pl-0">
+                            <h6>Tiết kiệm thời gian</h6>
+                            <p>Mua sắm dễ hơn khi online</p>
+                        </div>
+                    </div>
+                </div><div class="col-md-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="~/Public/Img/online-business.png" class="img-fluid" />
+                        </div>
+                        <div class="col-8 pl-0">
+                            <h6>Tư vấn trực tiếp</h6>
+                            <p>Đội ngũ tư vấn nhiệt tình</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Công Ty</h3>
+                    <ul>
+                        <li><a href="#">Giới Thiệu Về Routine</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                        <li><a href="#">Hệ Thống Cửa Hàng</a></li>
+                        <li><a href="#">Chăm Sóc Khách Hàng</a></li>
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Chính Sách Khách Hàng</h3>
+                    <ul>
+                        <li><a href="#">Chính Sách Khách Hàng Thân Thiết</a></li>
+                        <li><a href="#">Chính Sách Đổi Trả</a></li>
+                        <li><a href="#">Chính Sách Bảo Hành</a></li>
+                        <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Kết nối với Routine</h3>
+                    <div class="row">
+                        <FORM method="POST" action="https://www.facebook.com/routinevn/?ref=page_internal">
+                            <button type="submit" name="Submit">
+                                <img src="~/Public/Img/Slider/facebook-messenger-instagram-inc-like-button.jpg" width="30" ,height="30">
+                            </button>
+                        </FORM>
+                        <FORM method="POST" action="https://www.youtube.com/watch?v=7tBviRxW4jk">
+                            <button type="submit" name="Submit">
+                                <img src="~/Public/Img/Slider/facebook-messenger-instagram-inc-like-button.jpg" width="30" ,height="30">
+                            </button>
+                        </FORM> 
+                        <FORM method="POST" action="https://www.instagram.com/routine_official/">
+                            <button type="submit" name="Submit">
+                                <img src="~/Public/Img/Slider/facebook-messenger-instagram-inc-like-button.jpg" width="30" ,height="30">
+                            </button>
+                        </FORM>
+                        <FORM method="POST" action="https://www.pinterest.com/routinevn/_created/">
+                            <button type="submit" name="Submit">
+                                <img src="~/Public/Img/Slider/facebook-messenger-instagram-inc-like-button.jpg" width="30" ,height="30">
+                            </button>
+                        </FORM>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-3">
+                    <h3>Thông Tin Cửa Hàng</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Cửa Hàng Thứ 29:
+                                Địa chỉ: Số 25 đường 3/2, Phường 1, TP. Đà Lạt
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Cửa Hàng Thứ 28:
+                                70-72 Ngô Đức Kế, phường Bến Nghé, Quận 1, TP.HCM - ĐT: 028.62.701.272
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="copyright bg-danger py-3 text-center text-black-50">
+        Design: Mind TEAM_01
+    </section>
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+            integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+            crossorigin="anonymous"></script>
+    <script src="~/Public/Js/app.js"></script>
+</body>
+</html>
