@@ -43,6 +43,67 @@
     <section class="maincontent">
         @RenderBody();
     </section>
+    <div id="widget-root" channel-id="1007b4d8-db75-49e8-a36b-f3699a012e7b"></div>
+    <script defer src="https://chat.zozo.vn/resource/widget.js"></script>
+    <script>
+        setTimeout(function () {
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9&appId=231584730667533";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        }, 3000);
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8JJ59N"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="widget-actions">
+        <div class="z-btn-list">
+            <!--div class="z-btn z-btn-facebook">
+                <a title="Trò chuyện thông qua Facebook Messenger" target="_blank" rel="noopener"
+                   href="http://m.me/925790224164852?ref=zozovn">
+                    <img src="https://zozo.vn/public/theme/circle/images/widgets/fbmessenger.svg" alt="btn-facebook" /></a>
+            </div-->
+            <div class="z-btn z-btn-zalo">
+                <a title="Chat với chúng tôi qua Zalo" target="_blank" rel="noopener"
+                   href="https://zalo.me/0936018083">
+                    <img src="https://zozo.vn/public/theme/circle/images/widgets/zalo.svg" alt="btn-zalo" />
+                </a>
+            </div>
+            <div class="z-btn z-btn-callow">
+                <a title="Gọi ngay" href="tel:0936018083">
+                    <img src="https://zozo.vn/public/theme/circle/images/widgets/call.svg" alt="btn-callnow" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+    .widget-actions {
+        position: relative;
+    }
+    .z-btn-list {
+        position: fixed;
+        bottom: 100px;
+        right: 42px;
+        z-index: 1001;
+    }
+    .z-btn-list .z-btn {
+        margin-top: 15px;
+    }
+
+   
+        #chat-widget #chat-wg-alert {
+            display: none !important;
+        }
+    
+    </style>
     <section class="Service bg-white py-3">
         <div class="container">
             <div class="row">
@@ -52,7 +113,7 @@
                             <img src="~/Public/Img/free-delivery.png" class="img-fluid" />
                         </div>
                         <div class="col-8 pl-0">
-                            <h6>Miễn phí vận chuyển</h6>
+                            <a href="#"><h6>Miễn phí vận chuyển</h6></a>
                             <p>Miễn phí vận chuyển nội thành</p>
                         </div>
                     </div>
@@ -63,7 +124,7 @@
                             <img src="~/Public/Img/21284346.jpg" class="img-fluid" />
                         </div>
                         <div class="col-8 pl-0">
-                            <h6>Đổi trả hàng</h6>
+                            <a href="#"><h6>Đổi trả hàng</h6></a>
                             <p>Đổi trả lên tới 30 ngày</p>
                         </div>
                     </div>
@@ -73,7 +134,7 @@
                             <img src="~/Public/Img/share.png" class="img-fluid" />
                         </div>
                         <div class="col-8 pl-0">
-                            <h6>Tiết kiệm thời gian</h6>
+                            <a href="#"><h6>Tiết kiệm thời gian</h6></a>
                             <p>Mua sắm dễ hơn khi online</p>
                         </div>
                     </div>
@@ -83,7 +144,7 @@
                             <img src="~/Public/Img/online-business.png" class="img-fluid" />
                         </div>
                         <div class="col-8 pl-0">
-                            <h6>Tư vấn trực tiếp</h6>
+                            <a href="#"><h6>Tư vấn trực tiếp</h6></a>
                             <p>Đội ngũ tư vấn nhiệt tình</p>
                         </div>
                     </div>
@@ -97,7 +158,7 @@
                 <div class="col-md-3">
                     <h3>Công Ty</h3>
                     <ul>
-                        <li><a href="#">Giới Thiệu Về Routine</a></li>
+                        <li><a href="https://routine.vn/introduce">Giới Thiệu Về Routine</a></li>
                         <li><a href="#">Tuyển Dụng</a></li>
                         <li><a href="#">Hệ Thống Cửa Hàng</a></li>
                         <li><a href="#">Chăm Sóc Khách Hàng</a></li>
@@ -117,27 +178,14 @@
                 <div class="col-md-3">
                     <h3>Kết nối với Routine</h3>
                     <div class="row">
-                        <FORM method="POST" action="https://www.facebook.com/routinevn/?ref=page_internal">
-                            <button type="submit" name="Submit">
-                                <img src="~/Public/Img/Slider/facebook-messenger-instagram-inc-like-button.jpg" width="30" ,height="30">
-                            </button>
-                        </FORM>
-                        <FORM method="POST" action="https://www.youtube.com/watch?v=7tBviRxW4jk">
-                            <button type="submit" name="Submit">
-                                <img src="~/Public/Img/Slider/facebook-messenger-instagram-inc-like-button.jpg" width="30" ,height="30">
-                            </button>
-                        </FORM> 
-                        <FORM method="POST" action="https://www.instagram.com/routine_official/">
-                            <button type="submit" name="Submit">
-                                <img src="~/Public/Img/Slider/facebook-messenger-instagram-inc-like-button.jpg" width="30" ,height="30">
-                            </button>
-                        </FORM>
-                        <FORM method="POST" action="https://www.pinterest.com/routinevn/_created/">
-                            <button type="submit" name="Submit">
-                                <img src="~/Public/Img/Slider/facebook-messenger-instagram-inc-like-button.jpg" width="30" ,height="30">
-                            </button>
-                        </FORM>
 
+                        <div class="lienhe"><a href="https://www.facebook.com/routinevn/?ref=page_internal"><i class="fab fa-facebook-f"></i></a></div>
+                        <div class="lienhe"><a href="https://www.youtube.com/watch?v=7tBviRxW4jk"><i class="fab fa-youtube"></i></a></div>
+                        <div class="lienhe"><a href="https://www.instagram.com/routine_official/"><i class="fab fa-instagram"></i></a></div>
+                        <div class="lienhe"><a href="https://www.pinterest.com/routinevn/_created/"><i class="fab fa-pinterest-p"></i></a></div>
+                            
+                        
+                        
                     </div>
 
 

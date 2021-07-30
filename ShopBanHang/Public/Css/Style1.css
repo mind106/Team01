@@ -12,10 +12,13 @@ nav {
     display: flex;
     padding: 3rem 10rem;
     justify-content: space-between;
+ 
 }
 
+
+
 .container {
-    height: 100vh;
+    height: 80vh;
 }
 
     .container img {
